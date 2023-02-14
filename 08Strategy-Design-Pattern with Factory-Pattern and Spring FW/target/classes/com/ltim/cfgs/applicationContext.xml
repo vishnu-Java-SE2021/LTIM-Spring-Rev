@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <!-- Dependent class -->
+        <bean id="dhl" class="com.ltim.beans.DHL" />
+        <bean id="dtdc" class="com.ltim.beans.DTDC" />
+        <bean id="bDart" class="com.ltim.beans.BlueDart" />
+        
+        <!-- Target class -->
+        <bean id="fpk" class="com.ltim.beans.Flipkart">
+        	<property name="courier" ref="bDart" />
+        </bean>
+        
+</beans>        
