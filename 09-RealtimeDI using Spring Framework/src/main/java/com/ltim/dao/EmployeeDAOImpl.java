@@ -14,6 +14,7 @@ public class EmployeeDAOImpl implements IEmployeeDAO {
 	DataSource ds;
 	
 	public EmployeeDAOImpl(DataSource ds) {
+		System.out.println("EmployeeDAOImpl.EmployeeDAOImpl()");
 		this.ds = ds;
 	}
 	

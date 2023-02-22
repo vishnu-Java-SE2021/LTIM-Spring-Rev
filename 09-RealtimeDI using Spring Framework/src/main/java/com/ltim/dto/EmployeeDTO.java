@@ -8,6 +8,10 @@ public class EmployeeDTO {
 	String eph;
 	double esal;
 	
+	public EmployeeDTO() {
+		System.out.println("EmployeeDTO.EmployeeDTO()");
+	}
+	
 	public int getEid() {
 		return eid;
 	}

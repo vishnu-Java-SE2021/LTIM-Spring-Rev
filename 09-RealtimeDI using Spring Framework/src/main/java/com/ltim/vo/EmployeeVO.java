@@ -8,6 +8,10 @@ public class EmployeeVO {
 	String eph;
 	double esal;
 	
+	public EmployeeVO() {
+		System.out.println("EmployeeVO.EmployeeVO()");
+	}
+	
 	public int getEid() {
 		return eid;
 	}

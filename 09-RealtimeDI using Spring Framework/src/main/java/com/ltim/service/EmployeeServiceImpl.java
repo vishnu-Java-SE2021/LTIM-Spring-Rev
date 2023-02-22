@@ -9,6 +9,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
 	IEmployeeDAO empDao;
 	
 	public EmployeeServiceImpl(IEmployeeDAO empDao) {
+		System.out.println("EmployeeServiceImpl.EmployeeServiceImpl()");
 		this.empDao = empDao;
 	}
 	

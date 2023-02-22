@@ -9,6 +9,7 @@ public class EmployeeController {
 	IEmployeeService empService;
 	
 	public EmployeeController(IEmployeeService empService){
+		System.out.println("EmployeeController.EmployeeController()");
 		this.empService = empService;
 	}
 	

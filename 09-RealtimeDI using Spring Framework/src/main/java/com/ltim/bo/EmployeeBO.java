@@ -8,6 +8,10 @@ public class EmployeeBO {
 	double egsal;
 	double ensal;
 	
+	public EmployeeBO() {
+		System.out.println("EmployeeBO.EmployeeBO()");
+	}
+	
 	public Integer getEid() {
 		return eid;
 	}
