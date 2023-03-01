@@ -9,7 +9,7 @@ public class Flipkart {
 
 	//HAS-A property
 	@Autowired
-	@Qualifier("dd")
+	@Qualifier("courierType")
 	private Courier courier;
 
 	public  String shopping(String items[],double price[]) {
